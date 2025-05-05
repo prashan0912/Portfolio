@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+}
+
+.naver {
+    height: 100px;
+    width: 1600px;
+    border: red solid 1px;
+    display: flex;
+    justify-content:start;
+}
+.logo{
+    width: 150px;
+}
+
+.list {
+    display: flex;
+}
+
+.listDetails, .logo   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.listDetails li,.logo {
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    font-size:  large;
+    font-weight: 500;
+}
+.listDetails li:hover{
+    color: brown;
+    cursor: pointer;
+}

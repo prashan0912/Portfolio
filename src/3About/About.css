@@ -1,0 +1,18 @@
+
+.AboutContainer{
+    margin-top: 20px;
+    height: 500px;
+    width: 1600px;
+    border: purple solid 1px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.mainAbout li {
+margin: 15px;
+list-style:circle;
+font-size: larger;
+margin-left: 70px;
+padding: 10px;  
+}

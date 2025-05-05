@@ -1,0 +1,85 @@
+.ConnectContainer {
+    margin-top: 20px;
+    height: 800px;
+    width: 1600px;
+    border: rgb(96, 128, 0) solid 1px;
+}
+
+.ConnectTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.ConnectWrapper {
+    height: 600px;
+    width: 1500px;
+    margin: 15px;
+    border: red solid 2px;
+    font-size: larger;
+    margin-left: 70px;
+    padding: 10px;
+
+}
+
+.wrapper2 {
+    height: 600px;
+    width: 1450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: red solid 2px;
+}
+
+.nameEmail {
+    color: black;
+    height: 500px;
+    width: 600px;
+    border: solid black 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    padding: 5px;
+    font-size: 25px;
+    background-color:#ACC7B4;
+    border-radius: 20px;
+}
+
+input {
+    margin: 10px;
+    height: 30px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    outline: none;
+
+}
+
+textarea {
+    height: 100px;
+    width: 370px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+
+
+}
+.submitButton{
+    font-weight: 600;
+    color: rgb(106, 95, 95);
+    height: 40px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submitButton:hover{
+    background-color: rgb(10, 9, 3);
+}
+.name,.Email,.textAreaContainer{
+    color: black;
+}

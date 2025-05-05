@@ -1,0 +1,99 @@
+
+.skillsContainer{
+    height: 500px;
+    width: 1600px;
+    /* border: rgb(204, 193, 67) solid 1px;  */
+}
+
+.skillsTitle{
+    display: flex;
+    justify-content: center;
+}
+.Skills{
+margin: 10px;
+display: inline;
+justify-content: space-between;
+}
+#skill{
+    height: 100px;
+    width: 100px;
+    /* border: red solid 7px; */
+    padding: 30px;
+    /* display: flex; */
+    justify-content: center;
+    border:none;
+    /* border-radius: 50%; */
+}
+.skillWrapper{
+    display: flex;
+    justify-content: center;
+    border: red solid 7px;
+    
+}
+
+#skill:hover{
+    /* background-color: white; */
+    scale: 1.1;
+    transition: 1s;
+    box-shadow: #ACC7B4 0px 22px 70px 4px;}
+.skill1{
+    background-image: url('../assets/react.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20px;
+}
+.skill2{
+    background-image: url('../assets/html.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill3{
+    background-image: url('../assets/text.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}.skill4{
+    background-image: url('../assets/c-.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill5{
+    background-image: url('../assets/mongo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill6{
+    background-image: url('../assets/social.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill7{
+    background-image: url('../assets/nodejs.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill8{
+    background-image: url('../assets/java.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill9{
+    background-image: url('../assets/mysql.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}.skill10{
+    background-image: url('../assets/js.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
