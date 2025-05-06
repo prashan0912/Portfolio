@@ -5,10 +5,13 @@
 .Project {
     margin-top: 20px;
     height: 900px;
-    width: 1600px;
+    width: 1520px;
     border: purple solid 1px;
 }
 .project1{
+    height: 350px;
+}
+.project2{
     height: 350px;
 }
 
@@ -21,7 +24,7 @@
 
 .projectWrapper {
     height: 800px;
-    width: 1600px;
+    width: 1520px;
     border: red solid 7px;
 }
 

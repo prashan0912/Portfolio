@@ -1,6 +1,6 @@
 .heroContainer {
     height: 500px;
-    width: 1600px;
+    width: 1520px;
     border: rgb(179, 148, 44) solid 2px;
     display: flex;
 }
@@ -27,7 +27,7 @@
 
 .photoContent {
     height: 500px;
-    width: 810px;
+    width: 740px;
     border: rgb(146, 23, 148) solid 1px;
 }
 

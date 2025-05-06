@@ -1,17 +1,22 @@
 
-import { useRef } from 'react';
 import './navbar.css'
-export default function Navbar() {
+export default function Navbar({ aboutRef, connectRef, skillsRef, projectsRef }) {
 
-    const scroll = useRef(null);
 
-    function handleScroll() {
-        scroll.current?.scrollIntoView({ behavior: 'smooth' });
+    function handleScrollToAbout() {
+        aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
+    function handleScrollToConnect() {
+        connectRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
 
-    function clickHandle(e) {
-        e.preventDefault();
+    function handleScrollToSkills() {
+        skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function handleScrollToProjects() {
+        projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
@@ -22,12 +27,12 @@ export default function Navbar() {
                 </div>
                 <div className="list">
                     <ol className='listDetails'>
-                        <li onClick={clickHandle}>About</li>
-                        <li>Journey</li>
-                        <li onClick={handleScroll}>Skills</li>
-                        <li>Projects</li>
-                        <li>Certification</li>
-                        <li>Connect</li>
+                        <li onClick={handleScrollToAbout}>About</li>
+                        {/* <li>Journey</li> */}
+                        <li onClick={handleScrollToSkills}>Skills</li>
+                        <li onClick={handleScrollToProjects}>Projects</li>
+                        {/* <li>Certification</li> */}
+                        <li onClick={handleScrollToConnect}>Connect</li>
                         <li>Resume</li>
                     </ol>
                 </div>
