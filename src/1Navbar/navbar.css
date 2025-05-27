@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     color: aliceblue;
+    position: sticky;
 }
 
 .naver {
@@ -9,9 +10,10 @@
     width: 1520px;
     border: red solid 1px;
     display: flex;
-    justify-content:start;
+    justify-content: start;
 }
-.logo{
+
+.logo {
     width: 150px;
 }
 
@@ -19,21 +21,24 @@
     display: flex;
 }
 
-.listDetails, .logo   {
+.listDetails,
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.listDetails li,.logo {
+.listDetails li,
+.logo {
     padding: 10px;
     margin: 10px;
     list-style: none;
-    font-size:  large;
+    font-size: large;
     font-weight: 500;
 }
-.listDetails li:hover{
+
+.listDetails li:hover {
     color: brown;
     cursor: pointer;
 }

@@ -8,12 +8,11 @@
     width: 1520px;
     border: purple solid 1px;
 }
-.project1{
+.project1,.project2{
     height: 350px;
+    cursor: pointer;
 }
-.project2{
-    height: 350px;
-}
+
 
 .ProjectTitle {
     display: flex;

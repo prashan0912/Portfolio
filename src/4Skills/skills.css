@@ -34,7 +34,7 @@ justify-content: space-between;
 #skill:hover{
     /* background-color: white; */
     scale: 1.1;
-    transition: 1s;
+    transition: 0.5s;
     box-shadow: #ACC7B4 0px 22px 70px 4px;}
 .skill1{
     background-image: url('../assets/react.svg');

@@ -1,7 +1,14 @@
 
 import './Hero.css'
 import ReactDOM from 'react-dom'
-export default function Hero() {
+export default function Hero({heroRef}) {
+
+
+    function handleScrollToConnect() {
+        heroRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
 
     return (
         <>
@@ -22,7 +29,7 @@ export default function Hero() {
                             <div id="persing">Pursuing B.Tech from Bhilai institute of Technology Durg </div>
                             <div id="about">About me</div>
                             <div className="buttonContainer">
-                                <button className='Btn'>Connect me </button>
+                                <button className='Btn' onClick={handleScrollToConnect}>Connect me </button>
                                 <a href='.././assets/PrashantSahu.pdf' download><button className='Btn'>Resume</button></a>
                             </div>
                         </div>

@@ -14,16 +14,17 @@ function App() {
   const aboutRef = useRef(null);
   const connectRef = useRef(null);
   const skillsRef = useRef(null);
-  const projectsRef=useRef(null);
+  const projectsRef = useRef(null);
+  const heroRef = useRef(null);
   return (
     <>
       <div className='mainWrapper'>
-        <Navbar aboutRef={aboutRef} connectRef={connectRef} skillsRef={skillsRef} projectsRef={projectsRef} />
-        <Hero />
+        <Navbar aboutRef={aboutRef} connectRef={connectRef} skillsRef={skillsRef} projectsRef={projectsRef}  />
+        <div ><Hero heroRef={heroRef} /></div>
         <div ref={aboutRef}><About /></div>
         <div ref={skillsRef}><Skills /></div>
         <div ref={projectsRef}><Project /></div>
-        <div ref={connectRef}><Connect /></div>
+       <div ref={heroRef}><div ref={connectRef}  ><Connect /></div></div> 
       </div>
     </>
   )
