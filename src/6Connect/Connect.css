@@ -1,56 +1,56 @@
-.ConnectContainer {
-    margin-top: 20px;
-    height: 800px;
-    width: 1520px;
-    border: rgb(96, 128, 0) solid 1px;
-}
-
-.ConnectTitle {
-    display: flex;
-    justify-content: center;
-}
-
-.ConnectWrapper {
-    height: 600px;
-    width: 1400px;
-    margin: 15px;
-    border: red solid 2px;
-    font-size: larger;
-    margin-left: 70px;
-    padding: 10px;
-
-}
-
 .wrapper2 {
-    height: 600px;
-    width: 1300px;
     display: flex;
+    margin: 80px 170px;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    border: red solid 2px;
+    gap: 120px;
 }
 
-.nameEmail {
-    color: black;
-    height: 500px;
-    width: 600px;
-    border: solid black 5px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    padding: 5px;
-    font-size: 25px;
-    background-color:#ACC7B4;
+.wrapper21 {
+    display: flex;
+    gap: 120px;
+}
+
+
+.wrapper4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--color-secondary);
     border-radius: 20px;
+    width: 50%;
+    gap: 40px;
+    padding: 25px;
+    font-size: 22px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#highlight {
+    color: var(--color-primary);
+}
+
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
-    margin: 10px;
-    height: 30px;
-    width: 350px;
+    /* margin: 10px;     */
+    width: 500px;
+    padding: 20px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
     color: black;
@@ -59,27 +59,79 @@ input {
 }
 
 textarea {
-    height: 100px;
-    width: 370px;
+    width: 500px;
+    padding: 20px;
     border: none;
+    font-size: 15px;
     border-radius: 5px;
     outline: none;
     color: black;
-
-
 }
-.submitButton{
+
+.submitButton {
+    background-color: var(--color-primary);
     font-weight: 600;
-    color: rgb(106, 95, 95);
+    color: var(--color-secondary);
     height: 40px;
-    width: 70px;
+    width: 100px;
     border: none;
     border-radius: 10px;
+    margin-left: 15px;
 }
 
-.submitButton:hover{
-    background-color: rgb(10, 9, 3);
+.submitButton:hover {
+    background-color: var(--color-accent);
 }
-.name,.Email,.textAreaContainer{
+
+.textAreaContainer {
+    padding: 5px;
+}
+
+.name,
+.Email,
+.textAreaContainer {
     color: black;
 }
+
+
+#github,
+#linkedIn,
+#leetCode {
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#github {
+    background-image: url(../assets/github.png);
+}
+
+#linkedIn {
+    background-image: url(../assets/linkedin.png);
+}
+
+#leetCode {
+    background-image: url(../assets/leetcode.png);
+}
+
+#locationSymbol{
+    color: var(--color-primary);
+    font-size: 20px;
+}
+
+#highlight{
+    display: flex;
+    align-items: center;
+}
+
+#copyright{
+    display: flex;
+    justify-content:center ;
+}
+span1{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+

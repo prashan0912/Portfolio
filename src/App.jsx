@@ -1,10 +1,10 @@
 
 import './App.css'
 import Navbar from './1Navbar/navbar'
-import Hero from './2Hero/Hero'
+import Hero2 from './2Hero/Hero2'
 import About from './3About/About'
 import Skills from './4Skills/skills'
-import { Project } from './5Projects/Project'
+import  Project  from './5Projects/Project2'
 import Connect from './6Connect/Connect'
 
 import { useRef } from 'react'
@@ -20,7 +20,7 @@ function App() {
     <>
       <div className='mainWrapper'>
         <Navbar aboutRef={aboutRef} connectRef={connectRef} skillsRef={skillsRef} projectsRef={projectsRef}  />
-        <div ><Hero heroRef={heroRef} /></div>
+        <div ><Hero2 heroRef={heroRef} /></div>
         <div ref={aboutRef}><About /></div>
         <div ref={skillsRef}><Skills /></div>
         <div ref={projectsRef}><Project /></div>

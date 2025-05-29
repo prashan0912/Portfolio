@@ -32,9 +32,13 @@ export default function Navbar({ aboutRef, connectRef, skillsRef, projectsRef })
                         <li onClick={handleScrollToSkills}>Skills</li>
                         <li onClick={handleScrollToProjects}>Projects</li>
                         {/* <li>Certification</li> */}
-                        <li onClick={handleScrollToConnect}>Connect</li>
+                        {/* <li onClick={handleScrollToConnect}>Connect</li> */}
                         <li>Resume</li>
                     </ol>
+                </div>
+                <div className='connect'>
+                    <div onClick={handleScrollToConnect}>Connect</div>
+
                 </div>
 
             </div>

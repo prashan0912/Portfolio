@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    min-height: 100vh;
+    /* background: linear-gradient(90deg, rgb(73, 1, 78) 0%, rgb(49, 0, 74) 50%, rgb(34, 6, 66) 100%); */
+    /* background: linear-gradient(90deg, #2F4F4F 0%, #D2691E 100%); */
+  
+    /* background: linear-gradient(90deg, rgb(33, 6, 143) 0%, rgb(8, 11, 94) 50%, rgb(21, 3, 85) 100%); */
+    background-repeat: no-repeat;
+}
+:root {
+  --color-primary: oklch(60% 0.15 250);     /* Blue */
+  --color-secondary: oklch(95% 0.03 260);   /* Light background */
+  --color-accent: oklch(70% 0.2 30);        /* Orange */
+  --color-text: oklch(30% 0.02 270);        /* Dark text */
+}
+body{
+  background-color: var(--color-secondary);
+  display: inline;
+  align-items: center;
+  /* justify-content: center; */
+}

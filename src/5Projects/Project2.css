@@ -1,0 +1,53 @@
+.project-format {
+    display: flex;
+    align-content: center;
+    gap: 80px;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+
+}
+
+.projectDetails {
+    height: 450px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: black solid 3px;
+    text-align: justify;
+}
+
+.projectImage {
+   padding: 40px 90px;
+}
+
+.plinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plinks p {
+    background-color: var(--color-primary);
+    padding: 20px;
+    margin: 24px 15px;
+    border-radius: 20px;
+}
+
+@media (max-width:565px) {
+
+    .project-format {
+        display: block;
+    }
+}

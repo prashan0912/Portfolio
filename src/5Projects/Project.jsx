@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Project.css'
-export function Project() {
+ function Project() {
 
     const [state1, setState] = useState(false)
     const [state2, setState2] = useState(false)
