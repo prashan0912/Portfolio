@@ -2,7 +2,7 @@ import photo from '../assets/photo.png'
 import "./About.css"
 export default function About() {
   return (
-    <div className="AboutContainer">
+    <div id='ABOUT' className="AboutContainer">
       <div className="title"><h1>About me </h1></div>
       <div className="mainAbout">
         <div className="about-left">

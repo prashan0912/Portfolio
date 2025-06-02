@@ -17,7 +17,7 @@ import './Project.css'
 
     return (
         <>
-            <div className="Project">
+            <div  className="Project">
                 <div className="ProjectTitle">
                     Project
                 </div>

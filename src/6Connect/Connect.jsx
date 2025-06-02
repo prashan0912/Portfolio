@@ -41,7 +41,7 @@ export default function Connect() {
 
 
   return (
-    <div className="ConnectContainer">
+    <div ID="CONNECT" className="ConnectContainer">
       <div className="skillsTitle"><h1> Contact me </h1></div>
 
       <div className="wrapper2">
@@ -88,7 +88,7 @@ export default function Connect() {
           </div>
         </form>
       </div>
-      <div id="copyright" >  copyright &copy; Prashant Portfolio || Website Design & Maintain by - <span1> Prashant Sahu </span1></div>
+      <div id="copyright" >  copyright &copy; Prashant Portfolio 2025 || Website Design & Maintain by - <span1> Prashant Sahu </span1> </div>
     </div>
 
   )

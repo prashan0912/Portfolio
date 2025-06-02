@@ -5,7 +5,7 @@ export default function Project() {
 
     return (
         <>
-            <div className="Project-Section">
+            <div ID="PROJECTS" className="Project-Section">
                 <div className="skillsTitle"><h1> Project Works</h1></div>
                 <div className="project-wrapper">
                     {projectData.map((proj, index) => {

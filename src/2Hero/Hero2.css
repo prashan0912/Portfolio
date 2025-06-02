@@ -8,7 +8,7 @@
 
 
 .photoContent {
-    border: var(--color-secondary) solid 10px;
+    border: var(--color-secondary) solid 2px;
 }
 
 .photoContent {
@@ -23,7 +23,7 @@
 }
 
 .photoContent:hover {
-    border: var(--color-primary) solid 10px;
+    /* border: var(--color-primary) solid 1px; */
 }
 
 #hi {

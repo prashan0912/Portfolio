@@ -4,7 +4,7 @@ import "./skills.css"
 
 export default function Skills() {
     return (
-        <div className='skillsContainer'>
+        <div id="SKILLS" className='skillsContainer'>
             <div className="skillsTitle"><h1> Professional Skills</h1></div>
             <div className="SkillsFlex">
                 <div id='skill' className='skill2' title="Html"></div>

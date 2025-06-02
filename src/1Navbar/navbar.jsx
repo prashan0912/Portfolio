@@ -1,44 +1,63 @@
 
 import './navbar.css'
-export default function Navbar({ aboutRef, connectRef, skillsRef, projectsRef }) {
 
+import menu_open from '../assets/menu-bar.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-    function handleScrollToAbout() {
-        aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+import menu_close from '../assets/remove.png'
+
+import ps from '../assets/ps.png'
+import { useRef } from 'react';
+
+export default function Navbar() {
+
+    // const [menu, setMenu] = useState(false)
+    const menuRef = useRef()
+
+    const openMenu = () => {
+        menuRef.current.style.right = "0px"
     }
-
-    function handleScrollToConnect() {
-        connectRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const closeMenu = () => {
+        menuRef.current.style.right = "-350px"
     }
-
-    function handleScrollToSkills() {
-        skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function handleScrollToProjects() {
-        projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-
     return (
         <>
             <div className="naver">
-                <div className="logo">
-                    Portfolio
-                </div>
-                <div className="list">
-                    <ol className='listDetails'>
-                        <li onClick={handleScrollToAbout}>About</li>
-                        {/* <li>Journey</li> */}
-                        <li onClick={handleScrollToSkills}>Skills</li>
-                        <li onClick={handleScrollToProjects}>Projects</li>
-                        {/* <li>Certification</li> */}
-                        {/* <li onClick={handleScrollToConnect}>Connect</li> */}
-                        <li>Resume</li>
-                    </ol>
-                </div>
-                <div className='connect'>
-                    <div onClick={handleScrollToConnect}>Connect</div>
+                <img src={ps} alt="" className='logo' />
+                <img src={menu_open}
+                    className='nav-mob-open'
+                    onClick={openMenu}
+                    alt=""
+                    style={{ height: 30, width: 30 }}
+                />
+                <ol className='nav-menu' ref={menuRef}>
+                    <img src={menu_close} alt=""
+                        className="nav-mob-close"
+                        onClick={closeMenu}
+                        style={{ height: 30, width: 30 }}
+                    />
+                    <AnchorLink className="anchor-link"
+                        offset={50} href="#ABOUT">
+                        <li>About</li>
+                    </AnchorLink>
 
+                    <AnchorLink className="anchor-link"
+                        offset={50} href="#SKILLS">
+                        <li>Skills</li>
+                    </AnchorLink>
+
+                    <AnchorLink className="anchor-link"
+                        offset={50} href="#PROJECTS">
+                        <li>Projects</li>
+                    </AnchorLink>
+
+                    <li>Resume</li>
+                </ol>
+                <div className='connect'>
+                    <AnchorLink className="anchor-link"
+                        offset={50} href="#CONNECT">
+                        <li>Connect </li>
+                    </AnchorLink>
                 </div>
 
             </div>
