@@ -1,7 +1,10 @@
 import './Project2.css'
+import { useState } from 'react';
 import { projectData } from '../assets/ProjectDetails'
+
 export default function Project() {
 
+    const [count, setCount] = useState(0);
 
     return (
         <>
@@ -26,7 +29,9 @@ export default function Project() {
                                 </div>
 
                                 <div className="projectImage">
-                                    <img src={proj.p_image[0]} alt="img" style={{ height: 400, width: 400 }} />
+                                    <div className="leftarrow" onClick={() => setCount(count - 1)}>&lt;</div>
+                                    <img src={proj.p_image[count % 3]} alt="img" style={{ height: 400, width: 400 }} />
+                                    <div className="rightarrow" onClick={() => setCount(count + 1)}>&gt;</div>
                                 </div>
                             </div>
 
