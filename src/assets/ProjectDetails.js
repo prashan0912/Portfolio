@@ -1,21 +1,35 @@
- import mysql from '../assets/mysql.png'
- 
- 
- export  const projectData = [
+import mysql from '../assets/mysql.png'
+
+
+export const projectData = [
     {
         p_no: "01",
         p_Name: "Crime Mappers",
-        p_Details: "crime mapper is project of visualizing the crime record in map and take necessary steps",
-        p_tech: ["html" , "css" , "react", "tailwind Css"  , "nodejs" , "express"],
+        p_Details: "Crime Mappers is a web-based application developed to help police visualize, analyze, and predict crime using FIR data. It features interactive maps, real-time data entry, secure login, and predictive analytics, enabling law enforcement to identify crime trends, improve resource allocation, and enhance public safety through informed, data-driven decisions.",
+        p_tech: [
+            "#HTML ",
+            "#CSS ",
+            "#TailwindCSS ",
+            "#JavaScript ",
+            "#Next.js ",
+            "#Node.js ",
+            "#Strapi ",
+            "#PostgreSQL ",
+            "#Mapbox ",
+            "#Visual Studio Code ",
+            "#GitHub ",
+            "#JWT ",
+            "#GIS "
+        ],
         p_link: "project link",
         git_link: "github link",
         p_image: [mysql, "image2", "image3"]
     },
-     {
+    {
         p_no: "02",
         p_Name: "Quick Char",
         p_Details: "Pizza delivery App yenoiwnefoieoff  efef oijewoif jewfjwoiejfoijoiefjoiea efaoie fjae oifjjeaeoijfoa f jaofjoeejfojesoif e jf eoijfoiejf ei foi ewof owejfoiewjfo weoi fowe of weoifjo",
-        p_tech: ["#html " , "#css " , "#react ", "#tailwind Css "  , "#nodejs " , "express"],
+        p_tech: ["#html ", "#css ", "#react ", "#tailwind Css ", "#nodejs ", "express"],
         p_link: "project link",
         git_link: "github link",
         p_image: [mysql, "image2", "image3"]

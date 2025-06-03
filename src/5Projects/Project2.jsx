@@ -14,7 +14,11 @@ export default function Project() {
                                 <div className="projectDetails">
                                     <h1>{proj.p_Name}</h1>
                                     <p>{proj.p_Details}</p>
-                                    <p>{proj.p_tech}</p>
+                                    <div className="tech-list">
+                                        {Array.isArray(proj.p_tech) && proj.p_tech.map((tech, idx) => (
+                                            <span key={idx} className={`tech-tag tech-tag-${idx % 6}`}>{tech}</span>
+                                        ))}
+                                    </div>
                                     <div className="plinks">
                                         <p>{proj.p_link}</p>
                                         <p>{proj.git_link}</p>

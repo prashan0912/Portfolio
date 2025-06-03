@@ -1,7 +1,10 @@
 .project-format {
     display: flex;
     align-content: center;
+    justify-content: center;
     gap: 80px;
+    width: 100%;
+
 }
 
 .project-wrapper {
@@ -9,27 +12,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 100px;
+    margin: 80px 70px;
     display: grid;
-    /* grid-template-columns: 1fr; */
+    border: black solid 2px;
 
 }
 
 .projectDetails {
-    height: 450px;
-    width: 500px;
+    height: 500px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 20px;
-    border: black solid 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: justify;
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box  ;
+}
+.projectImage img{
+    height: 90%;
+    width: 90%;
 }
 
 .projectImage {
-   padding: 40px 90px;
+    padding: 40px 90px;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: justify;
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .plinks {
@@ -45,9 +69,69 @@
     border-radius: 20px;
 }
 
-@media (max-width:565px) {
+.plinks p:hover {
+    background-color: var(--color-accent);
+
+}
+
+@media (max-width:1092px) {
 
     .project-format {
         display: block;
+        gap: 100px;
     }
+
+    .projectDetails {
+        width: 90%;
+    }
+
+    .projectImage{
+        width: 90%;
+    }
+     .projectImage img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 10px 0;
+}
+
+.tech-tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #888;
+}
+
+/* Example color classes, customize as you like */
+.tech-tag-0 {
+    background: #007bff;
+}
+
+.tech-tag-1 {
+    background: #28a745;
+}
+
+.tech-tag-2 {
+    background: #ffc107;
+    color: #222;
+}
+
+.tech-tag-3 {
+    background: #e83e8c;
+}
+
+.tech-tag-4 {
+    background: #17a2b8;
+}
+
+.tech-tag-5 {
+    background: #6f42c1;
 }
