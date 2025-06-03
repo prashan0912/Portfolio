@@ -13,12 +13,6 @@
     display: flex;
 }
 
-
-
-.about-left{
-    background-image: url('../assets/photo.png');
-
-}
 .about-right{
     letter-spacing: 0.05rem;
     word-spacing: 0.05rem;
@@ -35,9 +29,11 @@
 .mainAbout span{
     color: var(--color-primary);
 }
-@media (max-width:565px) {
+@media (max-width:1000px) {
     .mainAbout {
         display: block;
-
+    }
+    .about-left img{
+        width: 100%;
     }
 }

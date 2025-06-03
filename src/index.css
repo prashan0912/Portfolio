@@ -26,6 +26,6 @@ body {
 
 body {
   background-color: var(--color-secondary);
-  /* display: inline; */
+  display: inline;
   /* align-items: center; */
 }

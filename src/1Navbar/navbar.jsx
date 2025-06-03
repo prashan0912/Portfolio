@@ -10,7 +10,6 @@ import ps from '../assets/ps.png'
 import { useRef } from 'react';
 
 export default function Navbar() {
-
     // const [menu, setMenu] = useState(false)
     const menuRef = useRef()
 
@@ -27,15 +26,17 @@ export default function Navbar() {
                 <img src={menu_open}
                     className='nav-mob-open'
                     onClick={openMenu}
-                    alt=""
-                    style={{ height: 30, width: 30 }}
+                    alt="menuOpen"
+                    style={{ height: 40, width: 40 }}
                 />
                 <ol className='nav-menu' ref={menuRef}>
-                    <img src={menu_close} alt=""
+                    <img src={menu_close}
+                        alt="menu_close"
                         className="nav-mob-close"
                         onClick={closeMenu}
-                        style={{ height: 30, width: 30 }}
+                        style={{ height: 40, width: 40 }}
                     />
+
                     <AnchorLink className="anchor-link"
                         offset={50} href="#ABOUT">
                         <li>About</li>

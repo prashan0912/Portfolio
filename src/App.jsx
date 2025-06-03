@@ -13,14 +13,12 @@ function App() {
 
   return (
     <>
-      <div className='mainWrapper'>
         <Navbar />
         <Hero2 />
         <About />
         <Skills />
         <Project />
         <Connect />
-      </div>
     </>
   )
 }

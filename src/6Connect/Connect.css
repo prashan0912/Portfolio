@@ -35,6 +35,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    width: 50%;
 }
 
 .links {
@@ -93,6 +94,7 @@ textarea {
 .Email,
 .textAreaContainer {
     color: black;
+    width: 100%;
 }
 
 
@@ -133,7 +135,7 @@ textarea {
     justify-content: center;
 }
 
-.copyright span1 {
+copyright span1 {
     color: var(--color-primary);
     font-weight: 600;
 }
@@ -163,10 +165,17 @@ textarea {
         margin-bottom: 20px;
     }
 
-    input,
+  
+    .name,
+    .Email,
+    .textAreaContainer {
+        width: 100%;
+    }
+      input,
     textarea {
         width: 100%;
         min-width: 0;
         box-sizing: border-box;
     }
 }
+

@@ -7,7 +7,7 @@ export default function Hero2() {
     return (
         <>
             <div className="heroContainer">
-
+               
                 <div className="photoContent"> </div>
                 {/* <div id="hi">Hi! I am </div> */}
                 <div id="name"> Hello! I'm <span>Prashant Sahu</span></div>

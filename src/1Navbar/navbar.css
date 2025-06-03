@@ -1,7 +1,6 @@
 * {
     margin: 0%;
     padding: 0%;
-    position: sticky;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
@@ -72,7 +71,7 @@
     color: black;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
     .naver {
         margin: 20px 50px;
@@ -84,7 +83,7 @@
 
     .nav-mob-open {
         position: fixed;
-        display: block;
+        display: block; 
         right: 30px;
     }
 
@@ -95,32 +94,73 @@
         left: 290px;
         width: 30px;
     }
-
-    .nav-menu {
+    .nav-menu{
         position: fixed;
         flex-direction: column;
-        align-items: start;
+        align-items: start; 
         top: 0px;
         gap: 30px;
         background-color: var(--color-primary);
-        right: -350px;
-        /* Hidden by default */
+        right: -350px; 
         height: 100%;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right  0.5s;
+        
+    }
+    .nav-menu  li{
+        top: 0;
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row ;
+        gap: 20px ;
+    }
+        .nav-menu.open {
+        right: 0; 
+    } 
+} */
 
+@media (max-width:768px) {
+
+    .nav-menu,
+    .connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 90px;
+        width: 30px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 350px;
+        background-color: var(--color-primary);
+        /* top: 0; */
+        bottom: 10%;
+        align-items: center;
+        right: -350px;
+        transition: right 0.5s;
     }
 
     .nav-menu li {
         top: 0;
         font-size: 30px;
-        padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+        position: relative;
+        z-index: 3;
     }
 
-    .nav-menu.open {
-        right: 0;
-        /* Slide in when open */
-    }
 }
